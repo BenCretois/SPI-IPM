@@ -45,7 +45,7 @@ jobs:
      - name: Deploy to GitHub Pages
        uses: Cecilapp/GitHub-Pages-deploy@v3
        env:
-          GH_TOKEN: ${{ secrets.GH_PAT }} # https://github.com/settings/tokens
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
        with:
           email: bencretois@gmail.com
           build_dir: _book/
